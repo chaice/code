@@ -1,0 +1,17 @@
+package com.ccit.dao;
+
+import java.util.List;
+
+import com.ccit.sta.Book;
+
+public class Test {
+
+	public static void main(String[] args) {
+		BookDAO bd = new BookDAO();
+		List<Book> list = bd.findBooks("332");
+        for (Book book : list) {
+			System.out.println(book);
+		}
+	}
+
+}

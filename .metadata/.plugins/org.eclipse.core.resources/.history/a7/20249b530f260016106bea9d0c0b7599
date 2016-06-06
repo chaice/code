@@ -1,0 +1,41 @@
+<%@ page import="java.util.List"%>
+<%@ page import="com.ccit.sta.Card"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>借书卡管理</title>
+<%@ include file="head.jsp"%>
+<% List<Card> list = (List<Card>)request.getAttribute("list"); %>
+<div class="bs-example" data-example-id="contextual-table">
+    <table class="table">
+      <thead>
+        <tr class="active">
+          <th scope="row">序号</th>
+          <th>卡号</th>
+          <th>姓名</th>
+          <th>电话号码</th>
+        </tr>
+      </thead>
+      <tbody>      
+        <tr class="success">
+          <th scope="row">3</th>
+          <td>Column content</td>
+          <td>Column content</td>
+          <td>Column content</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+$("ul>li:nth-child(1)").removeClass("active");
+$("ul>li:nth-child(2)").addClass("active");
+</script>
+</body>
+</html>

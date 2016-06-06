@@ -1,0 +1,9 @@
+class math {
+	public static void main(String[] args) {
+		String m="ÓÐºÃ¶à";
+		char n='a';
+
+		System.out.println(m+n);
+		System.out.println(n+m);
+	}
+}

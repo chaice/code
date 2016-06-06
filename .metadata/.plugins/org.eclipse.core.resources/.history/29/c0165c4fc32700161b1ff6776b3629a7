@@ -1,0 +1,72 @@
+<%@ page import="java.util.List"%>
+<%@ page import="com.ccit.sta.Book"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<%@ include file="head.jsp"%>
+<%
+	List<Book> list = (List<Book>)request.getAttribute("list");
+%>
+<a type="button" class="btn btn-success" style="float:right">新增图书</a>
+<div class="bs-example"
+	data-example-id="contextual-table">
+	<table class="table">
+		<thead>
+			<tr class="active">
+				<th scope="row">序号</th>
+				<th>书号</th>
+				<th>书名</th>
+				<th>作者</th>
+				<th>出版社</th>
+				<th>总数</th>
+				<th>剩余数量</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<%
+				for(Book b : list){
+			%>
+			<tr class="info">
+				<th scope="row"><%=b.getId()%></th>
+				<td><%=b.getCode()%></td>
+				<td><%=b.getTitle()%></td>
+				<td><%=b.getAuthor()%></td>
+				<td><%=b.getPublishing()%></td>
+				<td><%=b.getTotal()%></td>
+				<td><%=b.getCount()%></td>
+				<td>
+					<button id="<%=b.getCode()%>" type="button" class="btn btn-warning">修改</button>
+					<button id="<%=b.getId()%>" type="button" class="btn btn-danger">删除</button>
+
+				</td>
+			</tr>
+			<%
+				}
+			%>
+
+		</tbody>
+	</table>
+</div>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+	$("ul>li:nth-child(3)").addClass("active");
+	$("button.btn-danger").click(function() {
+		var id = $(this).attr("id");
+		if (confirm("确认要删除？")) {
+			location.href = "book_del?id=" + id;
+		}
+	});
+	$("button.btn-warning").click(function() {
+		var code = $(this).attr("id");
+		location.href = "book_find?code=" + code;
+	});
+</script>
+</body>
+</html>

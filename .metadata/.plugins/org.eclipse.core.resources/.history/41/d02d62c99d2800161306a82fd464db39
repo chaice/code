@@ -1,0 +1,21 @@
+package com.ccit.myl;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+public class UserCount implements ServletContextListener {
+    private int count;
+    public UserCount() {
+        
+    }
+    public void contextDestroyed(ServletContextEvent arg0) {
+        
+    }
+
+    public void contextInitialized(ServletContextEvent arg) {
+        ServletContext sc = arg.getServletContext();
+        System.out.println(sc.toString());    
+    }
+	
+}

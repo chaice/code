@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class for5 {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int a=0;//正数的个数
+		int b=0;//负数的个数
+		for(int i=0;i<10;i++){
+		System.out.println("请输入第"+(i+1)+"个数");
+		
+		int sum=s.nextInt();
+		if(sum>0){
+		a++;
+		}else{
+		b++;
+		}
+		}
+		System.out.println("正数的个数为"+a+"个");
+		System.out.println("负数的个数为"+b+"个");
+	}
+}

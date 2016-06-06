@@ -1,0 +1,35 @@
+package com.ccit.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import com.ccit.entity.Entity;
+
+public class Service {
+	public String bo_bor(String pro_bro, String bookcode, String cardcode) {
+		return borrDAO(pro_bro, bookcode, cardcode);
+	}
+
+	public String bo_ret() {
+
+		return null;
+	}
+
+	public String borrDAO(String pro_name, String bookcode, String cardcode) {
+		try {
+			String mes = "";
+			Connection con = DriverManager.getConnection(Entity.URL);
+			CallableStatement cs = con.prepareCall(pro_name);
+			cs.setString(1, bookcode);
+			cs.setString(2, cardcode);
+			cs.setString(3, mes);
+			return mes;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+
+	}
+}

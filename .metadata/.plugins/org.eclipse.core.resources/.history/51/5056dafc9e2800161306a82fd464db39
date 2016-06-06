@@ -1,0 +1,21 @@
+package com.ccit.myl;
+
+import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpSessionEvent;
+import javax.servlet.http.HttpSessionListener;
+
+public class UserCount implements HttpSessionListener {
+
+    public UserCount() {
+      
+    }
+    public void sessionCreated(HttpSessionEvent arg) {
+       HttpSession session = arg.getSession();
+       System.out.println(session.isNew());
+    }
+
+    public void sessionDestroyed(HttpSessionEvent arg0) {
+        // TODO Auto-generated method stub
+    }
+	
+}
