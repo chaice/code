@@ -1,6 +1,8 @@
 import java.io.File;
 import java.io.IOException;
 
+import org.junit.Test;
+
 /*创建文件必须捕获或者告诉外界可能会出现异常
  * 
  */
@@ -58,6 +60,10 @@ public class Text2 {
 			}
 			f.delete();
 		}
+	}
+	@Test
+	public void add(){
+		System.out.println(1+1);
 	}
 
 }

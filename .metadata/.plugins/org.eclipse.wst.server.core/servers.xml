@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="5">
-    <list key="modules" value0="web3::org.eclipse.jst.jee.server:web3::jst.web::2.5"/>
-  </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/servers/Tomcat v7.0 Server at localhost (2)-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost (2)" name="Tomcat v7.0 Server at localhost (2)" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
-    <list key="modules" value0="web4::org.eclipse.jst.jee.server:web4::jst.web::2.5"/>
-  </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/servers/Tomcat v7.0 Server at localhost (3)-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost (3)" name="Tomcat v7.0 Server at localhost (3)" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="5">
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
     <list key="modules" value0="web5::org.eclipse.jst.jee.server:web5::jst.web::2.5"/>
-  </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/servers/Tomcat v7.0 Server at localhost (4)-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost (4)" name="Tomcat v7.0 Server at localhost (4)" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
-    <list key="modules" value0="web6::org.eclipse.jst.jee.server:web6::jst.web::2.5"/>
   </server>
 </servers>

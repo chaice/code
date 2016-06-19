@@ -1,5 +1,0 @@
-127.0.0.1 - - [29/May/2016:22:59:42 +0800] "GET / HTTP/1.1" 404 955
-0:0:0:0:0:0:0:1 - - [29/May/2016:22:59:53 +0800] "GET /web2/ HTTP/1.1" 200 2018
-0:0:0:0:0:0:0:1 - - [29/May/2016:22:59:53 +0800] "GET /web2/signin.css HTTP/1.1" 404 1000
-0:0:0:0:0:0:0:1 - - [29/May/2016:22:59:53 +0800] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 1072
-0:0:0:0:0:0:0:1 - - [29/May/2016:22:59:53 +0800] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 1078
